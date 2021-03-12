@@ -750,6 +750,11 @@ hi! link mkdLinkDefTarget mkdURL
 hi! link mkdLinkTitle mkdInlineURL
 hi! link mkdDelimiter Keyword
 
+" Pandoc Markdown
+" >  vim-pandoc / vim-pandoc-syntax
+call s:hi("pandocAtxHeader", s:nord8_gui, "", s:nord8_term, "", s:bold, "")
+hi! link pandocPCite Comment
+
 " Vimwiki
 " > vimwiki/vimwiki
 if !exists("g:vimwiki_hl_headers") || g:vimwiki_hl_headers == 0
