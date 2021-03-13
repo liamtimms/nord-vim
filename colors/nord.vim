@@ -753,7 +753,16 @@ hi! link mkdDelimiter Keyword
 " Pandoc Markdown
 " >  vim-pandoc / vim-pandoc-syntax
 call s:hi("pandocAtxHeader", s:nord8_gui, "", s:nord8_term, "", s:bold, "")
-hi! link pandocPCite Comment
+call s:hi("texMathDelimZone", s:nord15_gui, "", s:nord15_term, "", s:bold, "")
+call s:hi("pandocHeaderID", s:nord4_gui, s:nord3_gui, "", s:nord3_term, "", "")
+hi! link pandocRefecenceDefinition markdownLinkText
+hi! link pandocCiteKey markdownUrl
+hi! link pandocHeaderID Comment
+hi! link pandocHeaderAttr Comment
+" call s:hi("pandocLaTexInlineMath", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+" hi! link texMathDelimZone mkdCode
+
+i! link pandocPCite Comment
 
 " Vimwiki
 " > vimwiki/vimwiki
