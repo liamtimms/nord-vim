@@ -761,8 +761,7 @@ hi! link pandocHeaderID Comment
 hi! link pandocHeaderAttr Comment
 " call s:hi("pandocLaTexInlineMath", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
 " hi! link texMathDelimZone mkdCode
-
-i! link pandocPCite Comment
+hi! link pandocPCite Comment
 
 " Vimwiki
 " > vimwiki/vimwiki
